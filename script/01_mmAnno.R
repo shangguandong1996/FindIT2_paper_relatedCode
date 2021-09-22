@@ -34,9 +34,9 @@ mergePeak_GR <- loadPeakFile("rawdata/ATAC/ATAC_mergePeak.bed")
 
 load("rawdata/ATAC/ATAC_peakNormCount.rda")
 
-Txdb <- AnnotationDbi::loadDb("rawdata/relate_annotation/Txdb_gtf_Araport11.sqlite")
+Txdb <- AnnotationDbi::loadDb("rawdata/related_annotation/Txdb_gtf_Araport11.sqlite")
 
-gene_alias <- readr::read_csv("rawdata/relate_annotation/gene_aliases_20190630_tidy.csv")
+gene_alias <- readr::read_csv("rawdata/related_annotation/gene_aliases_20190630_tidy.csv")
 
 dir.create("plot/mmAnno")
 dir.create("result/mmAnno")
